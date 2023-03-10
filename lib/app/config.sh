@@ -1,3 +1,5 @@
+source "lib/app/conf/conf.sh"
+
 function config {
 	local n=""
 	while [[ $n != "0" ]]
@@ -22,19 +24,22 @@ function config {
 		read n
 		if [[ $n == "1" ]] 
 		then
-			echo
+			configure_username
 		elif [[ $n == "2" ]]
 		then 
-			echo
+			configure_email
+			1
 		elif [[ $n == "3" ]]
 		then
-			echo 
+			configure_credentialHelper 
 		elif [[ $n == "4" ]]
 		then
-			echo
+			configure_username
+			configure_email
+			configure_credentialHelper
 		elif [[ $n == "5" ]]
 		then
-			echo
+			logout1
 		fi
 	done
 	
