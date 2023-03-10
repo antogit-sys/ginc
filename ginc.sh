@@ -3,9 +3,6 @@
 source "lib/color/color.sh"
 source "lib/app/config.sh"
 
-USRNAME=$(git config user.name)
-USREMAIL=$(git config user.email)
-
 logo(){
 	#clear
 	printf "$LGREEN
@@ -23,6 +20,8 @@ function main {
 	while [[ $c != "0" ]]
 	do
 		logo
+		USRNAME=$(git config user.name)
+		USREMAIL=$(git config user.email)
 		printf "\t${GREEN}username:${NC} ${USRNAME}\t\n"
 		printf "\t${GREEN}email:${NC} ${USREMAIL}\n\n"
 		printf "\t${RED}[${NC}1${RED}]${NC} config\n"
