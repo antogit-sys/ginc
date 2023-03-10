@@ -1,7 +1,7 @@
 #!/bin/bash
 
 source "lib/color/color.sh"
-source "config.sh"
+source "lib/app/config.sh"
 
 USRNAME=$(git config user.name)
 USREMAIL=$(git config user.email)
