@@ -1,5 +1,6 @@
-source "lib/color/color.sh"
+#!/bin/bash
 
+source "lib/color/color.sh"
 
 logo(){
 	clear
