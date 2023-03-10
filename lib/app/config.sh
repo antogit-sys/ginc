@@ -39,7 +39,7 @@ function config {
 			configure_credentialHelper
 		elif [[ $n == "5" ]]
 		then
-			logout1
+			logout
 		fi
 	done
 	
