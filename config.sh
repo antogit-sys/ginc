@@ -1,5 +1,6 @@
 function config {
 	#clear
+	local n=""
 	printf "$LCYAN
     ____ ____ _  _ ____ _ ____
     |    |  | |\ | |___ | | __
@@ -16,6 +17,6 @@ function config {
 	printf " ${RED}[${NC}4${RED}]${NC} config all(username, email, credential)\n"
 	printf " ${RED}[${NC}5${RED}]${NC} logout\n\n"
 	printf "${LCYAN}[choice]${NC}@ginc-hub${LCYAN}>${NC} "
-	read -p "" local n
+	read n
 }
 
