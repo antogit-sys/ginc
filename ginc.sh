@@ -2,6 +2,7 @@
 
 source "lib/color/color.sh"
 source "lib/app/config.sh"
+source "lib/app/download.sh"
 
 logo(){
 	#clear
@@ -35,7 +36,7 @@ function main {
 			config
 		elif [[ $c == "2" ]]
 		then
-			echo
+			dl-repo
 		elif [[ $c == "3" ]]
 		then
 			break
