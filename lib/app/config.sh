@@ -28,7 +28,6 @@ function config {
 		elif [[ $n == "2" ]]
 		then 
 			configure_email
-			1
 		elif [[ $n == "3" ]]
 		then
 			configure_credentialHelper 
