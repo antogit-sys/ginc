@@ -1,4 +1,6 @@
 
+source "lib/app/downl/down.sh"
+
 function dl-repo {
 	local n=""
 	while [[ $n != "0" ]]
@@ -20,7 +22,7 @@ function dl-repo {
 		read n
 		if [[ $n == 1 ]]
 		then
-			echo 
+			new-project
 		elif [[ $n == 2 ]]
 		then
 			echo 
