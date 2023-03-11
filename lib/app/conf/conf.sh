@@ -1,5 +1,5 @@
 #
-# -- Function 
+# ~> Function configure section
 # 
 
 function configure_username {
