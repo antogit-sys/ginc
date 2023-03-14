@@ -5,6 +5,7 @@ function dl-repo {
 	local n=""
 	while [[ $n != "0" ]]
 	do
+		clear
 		printf "${LCYAN}
 		___  ____ _ _ _ _  _ _    ____ ____ ___  
 		|  \ |  | | | | |\ | |    |  | |__| |  \ 
@@ -25,16 +26,20 @@ function dl-repo {
 			new-project
 		elif [[ $n == 2 ]]
 		then
-			echo 
+			git status
+			printf "${YELLOW}press the enter...${NC}"
+			read -p ""
 		elif [[ $n == 3 ]]
 		then
-			echo
+			git log
+			printf "${YELLOW}press the enter...${NC}"
+			read -p ""
 		elif [[ $n == 4 ]]
 		then
-			echo
+			track-file
 		elif [[ $n == 5 ]]
 		then
-			echo
+			new-commit
 		elif [[ $n == 6 ]]
 		then
 			echo
