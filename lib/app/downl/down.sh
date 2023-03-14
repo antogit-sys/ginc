@@ -17,6 +17,7 @@ function track-file {
 	read namefile
 	git add $namefile
 	printf "\n${YELLOW}press the enter..."
+	read -p ""
 }
 
 function new-commit {
