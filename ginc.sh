@@ -5,7 +5,7 @@ source "lib/app/config.sh"
 source "lib/app/download.sh"
 
 logo(){
-	#clear
+	clear
 	printf "$LGREEN
 	 ██████╗ ██╗███╗   ██╗ ██████╗
 	██╔════╝ ██║████╗  ██║██╔════╝
@@ -16,8 +16,15 @@ logo(){
 	$NC\n"
 }
 
+messageBox(){
+	dialog --msgbox "this tool is covered by the gpl3 license\n
+	\ngithub: antogit-sys
+	\nemail: antonio.perrucci.lavoro@gmail.com" 10 50
+}
+
 function main {	
 	local c=""
+	messageBox
 	while [[ $c != "0" ]]
 	do
 		logo
@@ -39,7 +46,7 @@ function main {
 			dl-repo
 		elif [[ $c == "3" ]]
 		then
-			break
+			echo
 		fi
 	done
 	
