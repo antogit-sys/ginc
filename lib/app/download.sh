@@ -42,10 +42,12 @@ function dl-repo {
 			new-commit
 		elif [[ $n == 6 ]]
 		then
-			echo
+			printf "${RED}work in progress...${NC}\n"
+			printf "${YELLOW}press the enter...${NC}"
+			read -p ""
 		elif [[ $n == 7 ]]
 		then
-			echo
+			push-masterproject
 		fi
 	done
 }
