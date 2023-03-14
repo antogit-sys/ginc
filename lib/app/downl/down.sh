@@ -29,3 +29,11 @@ function new-commit {
 	printf "${YELLOW}press the enter...${NC}"
 	read -p ""
 }
+
+function push-masterproject {
+	printf "${YELLOW}attention, instead of the password put the token generated on the github site!!${NC}"
+	git push origin master
+	printf "${LCYAN}[choice]${NC}@ginc-hub${LCYAN}>${NC} "
+	printf "${RED}git push origin master${NC}\n"
+	printf "${YELLOW}press the enter...${NC}"
+}
