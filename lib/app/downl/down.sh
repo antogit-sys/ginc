@@ -15,7 +15,7 @@ function track-file {
 	ls -al
 	printf "${LCYAN}files to track:?${NC} "
 	read namefile
-	git add $namefile
+	git add -f $namefile
 	printf "\n${YELLOW}press the enter..."
 	read -p ""
 }
@@ -31,9 +31,10 @@ function new-commit {
 }
 
 function push-masterproject {
-	printf "${YELLOW}attention, instead of the password put the token generated on the github site!!${NC}"
+	printf "${YELLOW}attention, instead of the password put the token generated on the github site!!${NC}\n"
 	git push origin master
 	printf "${LCYAN}[choice]${NC}@ginc-hub${LCYAN}>${NC} "
 	printf "${RED}git push origin master${NC}\n"
 	printf "${YELLOW}press the enter...${NC}"
+	read -p ""
 }
