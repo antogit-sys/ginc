@@ -1,8 +1,14 @@
+#
+# - DOWNLOAD MENU
+#===================>
 
+#1. import functions download file
 source "lib/app/downl/down.sh"
 
 function dl-repo {
-	local n=""
+	local n="" #choice
+	
+	#2. menu
 	while [[ $n != "0" ]]
 	do
 		clear
@@ -42,6 +48,7 @@ function dl-repo {
 			new-commit
 		elif [[ $n == 6 ]]
 		then
+			#soon...
 			printf "${RED}work in progress...${NC}\n"
 			printf "${YELLOW}press the enter...${NC}"
 			read -p ""

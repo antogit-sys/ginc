@@ -3,23 +3,19 @@
 # 
 
 function configure_username {
-	#clear
 	local name
-	#printf $NC
 	printf "\n${GREEN} - config username - ${NC}\n"
 	printf "\n${LCYAN}name: ${NC}" 
 	read name
-	git config user.name $name 	
+	git config user.name $name 	#actual command
 }
 
 function configure_email {
-	#clear
 	local email
-	#printf $NC
 	printf "\n${GREEN} - config email - ${NC}\n"
 	printf "\n${LCYAN}email: ${NC}" 
 	read email
-	git config user.email $email 	
+	git config user.email $email #actual command	
 }
 
 function configure_credentialHelper {
@@ -27,7 +23,7 @@ function configure_credentialHelper {
 	printf "\n${GREEN} - config credential helper - ${NC}\n"
 	printf "\n${LCYAN}credential helper: ${NC}" 
 	read ch
-	git config credential.helper $ch	
+	git config credential.helper $ch #actual command
 }
 
 function logout {

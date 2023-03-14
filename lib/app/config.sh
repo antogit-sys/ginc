@@ -1,7 +1,12 @@
+#
+# - CONFIG MENU
+#===================>
+
+#1. import functions conf file
 source "lib/app/conf/conf.sh"
 
 function config {
-	local n=""
+	local n="" #choice
 	while [[ $n != "0" ]]
 	do
 		clear
@@ -13,7 +18,7 @@ function config {
 		printf ">>>>>>> $LGREEN${USRNAME}$NC\n"
 		printf "${LCYAN}[choice]${NC}@ginc-hub${LCYAN}>${NC} "
 		printf "${RED}git config --list --show-origin${NC}\n"
-		git config --list --show-origin
+		git config --list --show-origin #actual command
 		printf "\n ${RED}[${NC}0${RED}]${NC} exit\n"
 		printf " ${RED}[${NC}1${RED}]${NC} ${NC}config username\n"
 		printf " ${RED}[${NC}2${RED}]${NC} ${NC}config email\n"
@@ -22,6 +27,7 @@ function config {
 		printf " ${RED}[${NC}5${RED}]${NC} logout\n\n"
 		printf "${LCYAN}[choice]${NC}@ginc-hub${LCYAN}>${NC} "
 		read n
+		# 2. menu
 		if [[ $n == "1" ]] 
 		then
 			configure_username
@@ -39,7 +45,7 @@ function config {
 		elif [[ $n == "5" ]]
 		then
 			logout
-		fi
-	done
-	
+		fi #end if
+	done #end while
+
 }

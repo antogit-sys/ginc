@@ -1,9 +1,15 @@
 #!/bin/bash
+#
+# github: antogit-sys		
+#							
 
+
+#1. import functions file
 source "lib/color/color.sh"
 source "lib/app/config.sh"
 source "lib/app/download.sh"
 
+#2. out logo
 logo(){
 	clear
 	printf "$LGREEN
@@ -16,18 +22,15 @@ logo(){
 	$NC\n"
 }
 
-messageBox(){
-	dialog --msgbox "this tool is covered by the gpl3 license\n
-	\ngithub: antogit-sys
-	\nemail: antonio.perrucci.lavoro@gmail.com" 10 50
-}
-
 function main {	
-	local c=""
-	messageBox
+	local c="" #choice
+	messageBox #call function messageBox
+	
+	#- exits when c == 0 and c==3
 	while [[ $c != "0" ]]
 	do
 		logo
+		# --> 3. menu
 		USRNAME=$(git config user.name)
 		USREMAIL=$(git config user.email)
 		printf "\t${GREEN}username:${NC} ${USRNAME}\t\n"
@@ -35,9 +38,9 @@ function main {
 		printf "\t${RED}[${NC}1${RED}]${NC} config\n"
 		printf "\t${RED}[${NC}2${RED}]${NC} download remote repository\n"
 		printf "\t${RED}[${NC}3${RED}]${NC} exit\n"
-		echo
+		echo #new line
 		printf "${LCYAN}[choice]${NC}@ginc-hub${LCYAN}>${NC} "
-		read c
+		read c #input string
 		if [[ $c == "1" ]] 
 		then
 			config
@@ -46,10 +49,19 @@ function main {
 			dl-repo
 		elif [[ $c == "3" ]]
 		then
-			echo
+			break
 		fi
 	done
-	
+
+exit
 }
 
-main
+
+#- temporary function
+messageBox(){
+	dialog --msgbox "this tool is covered by the gpl3 license\n
+	\ngithub: antogit-sys
+	\nemail: antonio.perrucci.lavoro@gmail.com" 10 50 #10x50
+}
+
+main #call main

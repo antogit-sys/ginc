@@ -1,4 +1,4 @@
-# -- declare costant
+# -- declare color costant
 declare -r RED='\033[1;31m'
 declare -r GREEN='\033[0;32m'
 declare -r LGREEN='\033[1;92m'
