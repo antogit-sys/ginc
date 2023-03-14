@@ -3,20 +3,28 @@
 #
 
 function new-project {
-	local fname newfoldername
-	printf "${LCYAN}enter the project name to initialize the folder:${NC} "
-	read fname 
-	newfoldername="$(pwd)/${fname}"
-	if [ -d $newfoldername ] 
-	then
-		printf "${YELLOW}cannot create directory ${newfoldername}: File already exists\n"
-		printf "press the enter...${NC}"
-		read -p ""
-	else
-		printf "${LCYAN}[choice]${NC}@ginc-hub${LCYAN}>${NC} "
-		printf "${RED}git init $fname ${NC}\n"
-		git init $newfoldername
-		printf "\npress the enter..."
-		read -p ""
-	fi
+	git init $fname
+	printf "${LCYAN}[choice]${NC}@ginc-hub${LCYAN}>${NC} "
+	printf "${RED}git init${NC}\n"
+	printf "\npress the enter..."
+	read -p ""			
+}
+
+function track-file {
+	printf "${GREEN}file:${NC}\n"
+	ls -al
+	printf "${LCYAN}files to track:?${NC} "
+	read namefile
+	git add $namefile
+	printf "\n${YELLOW}press the enter..."
+}
+
+function new-commit {
+	printf "${LCYAN}commit name:${NC} "
+	read commitname
+	git commit -m "${commitname}"
+	printf "${LCYAN}[choice]${NC}@ginc-hub${LCYAN}>${NC} "
+	printf "${RED}git commit -m \"$commitname\"${NC}\n"
+	printf "${YELLOW}press the enter...${NC}"
+	read -p ""
 }
