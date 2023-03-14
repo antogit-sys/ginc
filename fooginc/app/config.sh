@@ -3,7 +3,7 @@
 #===================>
 
 #1. import functions conf file
-source "lib/app/conf/conf.sh"
+source "fooginc/app/conf/conf.sh"
 
 function config {
 	local n="" #choice
