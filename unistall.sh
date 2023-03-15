@@ -36,7 +36,7 @@ execute() {
 	echo -e "------------------${NC}"
 	printf "ginc.sh is... "
 	sleep 1
-	printf "${RED}deletd ${NC}\n"
+	printf "${RED}deleted ${NC}\n"
 	rm -rf ../ginc/
 	printf "deleted ginc.sh in... "
 	sleep 1
