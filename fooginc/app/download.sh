@@ -18,8 +18,8 @@ function dl-repo {
 		|__/ |__| |_|_| | \| |___ |__| |  | |__/                                          
 		${NC}\n\n"
 		printf "\t${RED}[${NC}0${RED}]${NC} exit\n"
-		printf "\t${RED}[${NC}1${RED}]${NC} download remote repository\n"
-		printf "\t${RED}[${NC}2${RED}]${NC} init(new project)\n"
+		printf "\t${RED}[${NC}1${RED}]${NC} init(new project)\n"
+		printf "\t${RED}[${NC}2${RED}]${NC} download remote repository\n"
 		printf "\t${RED}[${NC}3${RED}]${NC} status project\n"
 		printf "\t${RED}[${NC}4${RED}]${NC} list commit\n"
 		printf "\t${RED}[${NC}5${RED}]${NC} trace project files\n"
@@ -30,10 +30,10 @@ function dl-repo {
 		read n
 		if [[ $n == 1 ]]
 		then
-			download_remoteRepo
+			new-project
 		elif [[ $n == 2 ]]
 		then
-			new-project
+			download_remoteRepo
 		elif [[ $n == 3 ]]
 		then
 			git status
