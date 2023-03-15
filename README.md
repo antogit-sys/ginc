@@ -4,9 +4,13 @@
     <img src="img/gincScreen.png">
 </p>
 
+
+
 <p align="center"> 
     <small><b>ginc is not client</b></small>
  </p>
+
+
 
 ## 1. Introduction
 
