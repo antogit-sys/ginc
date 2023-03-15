@@ -16,3 +16,23 @@ Ginc, which stands for "ginc is not client," is a Bash script designed to simpli
 <p>
     <img src="img/download.png">
 </p>
+
+<br>
+
+## 🔗 2. install guide
+
+```bash
+sudo bash install.sh
+```
+
+<p>
+    <img src="img/setupInstall1.png">
+</p>
+
+<p>press the enter</p>
+
+
+
+<p>
+    <img src="img/install.png">
+</p>
