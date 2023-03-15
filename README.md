@@ -3,8 +3,9 @@
 <p align="center">
     <img src="img/gincScreen.png">
 </p>
+
 <p align="center"> 
-    <b>ginc is not client</b>
+    <small><b>ginc is not client</b></small>
  </p>
 
 ## 1. Introduction
@@ -19,7 +20,7 @@ Ginc, which stands for "ginc is not client," is a Bash script designed to simpli
 
 <br>
 
-##  2. install guide
+## 2. install guide
 
 ```bash
 sudo bash install.sh
@@ -54,5 +55,3 @@ ginc
 <p>
     <img src="img/use.png"> 
 </p>
-
-
