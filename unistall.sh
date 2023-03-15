@@ -47,7 +47,7 @@ execute() {
 	printf "${RED}/bin/fooginc${NC}\n"
 	rm -rf /bin/fooginc
 	printf "${LGREEN}[!] END UNISTALL${NC}\n"
-    cd ..
+	cd ..
 }
 
 main
