@@ -5,9 +5,9 @@
 
 
 #1. import functions file
-source "fooginc/color/color.sh"
-source "fooginc/app/config.sh"
-source "fooginc/app/download.sh"
+source "/bin/fooginc/color/color.sh"
+source "/bin/fooginc/app/config.sh"
+source "/bin/fooginc/app/download.sh"
 
 #2. out logo
 logo(){

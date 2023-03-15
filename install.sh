@@ -50,14 +50,14 @@ execute() {
 	sleep 1
 	printf "${LGREEN}executable ${NC}\n"
 	chmod a+x ginc.sh
-	printf "copy ginc.sh in... "
+	printf "move ginc.sh in... "
 	sleep 1
 	printf "${LGREEN}/bin/ginc${NC}\n"
-	cp ginc.sh /bin/ginc
+	mv ginc.sh /bin/ginc
 	printf "copy recursive fooginc in..."
 	sleep 2
 	printf "${LGREEN}/bin/fooginc${NC}\n"
-	cp -r fooginc /bin/fooginc
+	mv -r fooginc /bin/fooginc
 	printf "${LCYAN}[!] END INSTALL${NC}\n"
 }
 

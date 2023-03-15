@@ -3,7 +3,7 @@
 #===================>
 
 #1. import functions download file
-source "fooginc/app/downl/down.sh"
+source "/bin/fooginc/app/downl/down.sh"
 
 function dl-repo {
 	local n="" #choice
