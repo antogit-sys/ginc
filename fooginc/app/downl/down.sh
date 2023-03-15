@@ -2,6 +2,14 @@
 # ~> Function downlaod section
 #
 
+function download_remoteRepo {
+	printf "${LCYAN}link repo github:?${NC} "
+	read local link
+	downloadCommandExecute="git remote add origin ${link}"
+	$downloadCommandExecute
+	git pull origin master
+}
+
 function new-project {
 	git init $fname #actual command
 	printf "${LCYAN}[choice]${NC}@ginc-hub${LCYAN}>${NC} "
