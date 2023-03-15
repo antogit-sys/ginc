@@ -6,12 +6,6 @@
 
 
 
-<p align="center"> 
-    <small><b>ginc is not client</b></small>
- </p>
-
-
-
 ## 1. Introduction
 
 <p>
@@ -24,7 +18,7 @@ Ginc, which stands for "ginc is not client," is a Bash script designed to simpli
 
 <br>
 
-## 2. install guide
+## 2. Install guide
 
 ```bash
 sudo bash install.sh
@@ -58,4 +52,17 @@ ginc
 
 <p>
     <img src="img/use.png"> 
+</p>
+
+
+
+## 4. Unistall guide
+
+```bash
+cd ginc/
+sudo bash unistall.sh
+```
+
+<p>
+    <img src="img/unistall.png">
 </p>
