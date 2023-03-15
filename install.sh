@@ -57,7 +57,7 @@ execute() {
 	printf "copy recursive fooginc in..."
 	sleep 2
 	printf "${LGREEN}/bin/fooginc${NC}\n"
-	mv -r fooginc /bin/fooginc
+	cp -r fooginc/ /bin/fooginc
 	printf "${LCYAN}[!] END INSTALL${NC}\n"
 }
 
