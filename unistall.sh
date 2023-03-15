@@ -36,8 +36,8 @@ execute() {
 	echo -e "------------------${NC}"
 	printf "ginc.sh is... "
 	sleep 1
-	printf "${RED}deleetd ${NC}\n"
-	rm -rf ../ginc/*
+	printf "${RED}deletd ${NC}\n"
+	rm -rf ../ginc/
 	printf "deleted ginc.sh in... "
 	sleep 1
 	printf "${RED}/bin/ginc${NC}\n"
@@ -46,7 +46,7 @@ execute() {
 	sleep 2
 	printf "${RED}/bin/fooginc${NC}\n"
 	rm -rf /bin/fooginc
-	printf "${RED}[!] END UNISTALL${NC}\n"
+	printf "${LGREEN}[!] END UNISTALL${NC}\n"
 }
 
 main
