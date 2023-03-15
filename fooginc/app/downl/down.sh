@@ -10,7 +10,7 @@ function download_remoteRepo {
 	$downloadCommandExecute
 	printf "${LCYAN}[choice]${NC}@ginc-hub${LCYAN}>${NC} "
 	printf "${RED}git remote add origin ${link}${NC}\n"
-	printf "\n${LCYAN}[choice]${NC}@ginc-hub${LCYAN}>${NC} "
+	printf "${LCYAN}[choice]${NC}@ginc-hub${LCYAN}>${NC} "
 	printf "${RED}git pull origin master${NC}\n"
 	git pull origin master
 	printf "\n${YELLOW}press the enter..."
