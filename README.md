@@ -3,7 +3,9 @@
 <p align="center">
     <img src="img/gincScreen.png">
 </p>
-<p align="center"> 𝓰𝓲𝓷𝓬 𝓲𝓼 𝓷𝓸𝓽 𝓬𝓵𝓲𝓮𝓷𝓽 </p>
+<p align="center"> 
+    <b>𝓰𝓲𝓷𝓬 𝓲𝓼 𝓷𝓸𝓽 𝓬𝓵𝓲𝓮𝓷𝓽</b>
+ </p>
 
 ## 🔗1. Introduction
 
