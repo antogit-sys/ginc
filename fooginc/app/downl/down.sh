@@ -31,6 +31,8 @@ function track-file {
 	printf "${LCYAN}files to track:?${NC} "
 	read namefile
 	git add -f $namefile #actual command | -f ignored file .gitignore
+	printf "${LCYAN}[choice]${NC}@ginc-hub${LCYAN}>${NC} "
+	printf "${RED}git add -f ${namefile}${NC}\n"
 	printf "\n${YELLOW}press the enter..."
 	read -p ""
 }

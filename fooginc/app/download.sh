@@ -42,6 +42,8 @@ function dl-repo {
 		elif [[ $n == 4 ]]
 		then
 			git log
+			printf "${LCYAN}[choice]${NC}@ginc-hub${LCYAN}>${NC} "
+			printf "${RED}git log${NC}\n"
 			printf "${YELLOW}press the enter...${NC}"
 			read -p ""
 		elif [[ $n == 5 ]]
